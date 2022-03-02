@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: 'night_machine';
+  src: url('../assets/fonts/night_machine-webfont.woff2') format('woff2'),
+       url('../assets/fonts/night_machine-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vermin_vibes';
+  src: url('../assets/fonts/Vermin-Vibes-1989.woff2') format('woff2'),
+      url('../assets/fonts/Vermin-Vibes-1989.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
