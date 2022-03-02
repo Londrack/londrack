@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# desing
+/assets_build
+
 # dependencies
 /node_modules
 /.pnp
