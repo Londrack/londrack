@@ -11,10 +11,10 @@ export function Networks() {
             <div className="container">
                 <SubTitle text={lang.networksTitle} />
                 <div className="mt-6 mb-0 my-auto flex justify-center">
-                    <div className="flex justify-between w-1/2">
+                    <div className="flex flex-col md:flex-row justify-between w-1/2">
                     {data.networks.map((net, i) =>
                         <div key={i}>
-                            <a href={net.url} target="_blank" className="flex justify-center items-center" rel="noreferrer">
+                            <a href={net.url} target="_blank" className="flex justify-start mb-3 md:mb-0 md:justify-center items-center" rel="noreferrer">
                                 <img className="w-10" src={`./imgs/icons/net_${net.shortName}.svg`} alt={net.count} />
                                 <p className="pl-3 text-game-white">{net.count}</p>
                             </a>
