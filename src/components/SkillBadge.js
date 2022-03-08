@@ -74,11 +74,11 @@ export function SkillBadge({color, shortName, longName, direction, lvl}) {
         <div ref={containerRef}>
             <ThemeProvider theme={finalTheme} >
                 <Contenedor>
-                    <Badge title={longName}>
+                    <Badge title={longName} className=' my-[1.5em] mx-[2.7em] laptop:my-[0.4em]'>
                         <div className="circle">
                             <SkillImg shortName={shortName} longName={longName}  />
                         </div>
-                        <div className="ribbon">{longName}</div>
+                        <div className="ribbon laptop:hidden">{longName}</div>
                     </Badge>
                     <LvlBar className='xl:w-72 lg:w-44 w-24 gap-0'>
                         <div className='bar' title={`${lvl}%`}><span>{lvl}%</span></div>
@@ -143,7 +143,6 @@ const Badge = styled.div`
     background: linear-gradient(to bottom right, ${props => props.theme.color1} 0%, ${props => props.theme.color2} 100%);
     position: relative;
     z-index:2;
-    margin: 1.5em 2.7em;
     width: 3.5em;
     height: 5.7em;
     border-radius: 10px;
