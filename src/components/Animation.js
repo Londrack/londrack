@@ -51,7 +51,7 @@ export function Animation({ urlBase, altName, amount, idName, time}) {
     return (
         <div ref={containerRef}>
             <img id={idName}
-            className={`hidden sm:block md:w-[450px] lg:w-[500px]`}
+            className={`hidden sm:block md:w-[450px] lg:w-[500px] laptop:h-screen`}
             src={`${urlBase}1.svg`} alt={ altName } />
         </div>
     )

@@ -42,6 +42,9 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(10px)' },
         }
+      },
+      screens: {
+        'laptop': { 'raw': '(max-height: 700px)' },
       }
     },
   },
