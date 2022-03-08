@@ -78,7 +78,7 @@ export function SkillBadge({color, shortName, longName, direction, lvl}) {
                         <div className="circle">
                             <SkillImg shortName={shortName} longName={longName}  />
                         </div>
-                        <div className="ribbon laptop:hidden">{longName}</div>
+                        <div className="ribbon laptop:!top-[60px] ">{longName}</div>
                     </Badge>
                     <LvlBar className='xl:w-72 lg:w-44 w-24 gap-0'>
                         <div className='bar' title={`${lvl}%`}><span>{lvl}%</span></div>
