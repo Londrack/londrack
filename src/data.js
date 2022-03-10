@@ -121,7 +121,13 @@ export const dataFile = {
             url: 'http://www.biotopo.com.co/'
         }
     ],
-    networks: [{
+    networks: [
+        {
+            shortName: 'linkedin',
+            url: 'https://www.linkedin.com/in/alejandro-mejia-escobar/',
+            count: '@Alejandro Mejia'
+        },
+        {
             shortName: 'github',
             url: 'https://londrack.github.io/',
             count: '@Londrack'

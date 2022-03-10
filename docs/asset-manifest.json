@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a88f1489.css",
-    "main.js": "/static/js/main.e169482b.js",
+    "main.js": "/static/js/main.ef01c77b.js",
     "static/media/night_machine-webfont.woff": "/static/media/night_machine-webfont.d36b3cb23a35434ea841.woff",
     "static/media/night_machine-webfont.woff2": "/static/media/night_machine-webfont.b583fc7507824466e580.woff2",
     "static/media/Vermin-Vibes-1989.woff": "/static/media/Vermin-Vibes-1989.e1988bb812c37ee01ba2.woff",
     "static/media/Vermin-Vibes-1989.woff2": "/static/media/Vermin-Vibes-1989.3c0fb5cd9534ea3b4b82.woff2",
     "index.html": "/index.html",
     "main.a88f1489.css.map": "/static/css/main.a88f1489.css.map",
-    "main.e169482b.js.map": "/static/js/main.e169482b.js.map"
+    "main.ef01c77b.js.map": "/static/js/main.ef01c77b.js.map"
   },
   "entrypoints": [
     "static/css/main.a88f1489.css",
-    "static/js/main.e169482b.js"
+    "static/js/main.ef01c77b.js"
   ]
 }

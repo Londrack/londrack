@@ -19,9 +19,11 @@ export function Laboratory() {
 
     useEffect(() => {
         setwidthWindow(window.innerWidth)
-        window.addEventListener('resize', function () {
+        const resizeWindow = window.addEventListener('resize', function () {
             window.location.reload();
         });
+        return () => { window.removeEventListener("resize", resizeWindow) }
+
     }, [widthWindow]);
 
     if (window.innerWidth > 960) {
