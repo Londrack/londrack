@@ -11,7 +11,7 @@ export const dataFile = {
     title: 'Front Developer',
     eng: {
         createdBy: 'Created by',
-        aboutMe: `I have ${experience} years of experience in the definition, design, development and administration of web pages. I am creative, innovative, with ease and determination for self-learning. I am driven by constant personal and professional improvement. I have the ability to understand the logic of programming languages, work in a team and complete projects.`,
+        aboutMe: `I have ${experience} years of experience in the definition, design, development and administration of websites. I am creative, innovative, with ease and determination for self-learning. I am driven by constant personal and professional improvement. I have the ability to understand the logic of programming languages, work in a team and complete projects.`,
         title: 'Front Developer',
         homeTitle: 'Start',
         aboutMeTitle: 'About Me',
@@ -72,6 +72,18 @@ export const dataFile = {
             color: 'green'
         },
         {
+            longName: 'Python',
+            shortName: 'python',
+            lvl: 45,
+            color: 'gold'
+        },
+        {
+            longName: 'Redux',
+            shortName: 'redux',
+            lvl: 60,
+            color: 'purple'
+        },
+        {
             longName: 'Angular',
             shortName: 'angular',
             lvl: 80,
@@ -100,12 +112,6 @@ export const dataFile = {
             shortName: 'wordpress',
             lvl: 85,
             color: 'greenDark'
-        },
-        {
-            longName: 'Python',
-            shortName: 'python',
-            lvl: 45,
-            color: 'gold'
         },
     ],
     recentWorks: [{

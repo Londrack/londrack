@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Animation } from "../components/Animation";
-import { BgDiamond } from "../components/BgDiamond";
+import { BgDiamond } from "../components/Skills/BgDiamond";
 import { SubTitle } from "../components/Fonts/SubTitle";
+import { NavButton } from "../components/Menu/NavButton";
 import { DataContext } from "../Context";
 
 export function AboutMe() {
@@ -25,6 +26,7 @@ export function AboutMe() {
                         <p className="text-game-white text-xl lg:text-2xl">{ lang.aboutMe }</p>
                     </div>
                 </div>
+                <NavButton target="#skills-section" text={lang.skillsTitle} type="navBottom" />
             </div>
             <BgDiamond />
         </section>

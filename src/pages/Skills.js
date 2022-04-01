@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Animation } from "../components/Animation";
 import { SubTitle } from "../components/Fonts/SubTitle";
-import { SkillBadge } from "../components/SkillBadge";
+import { NavButton } from "../components/Menu/NavButton";
+import { SkillBadge } from "../components/Skills/SkillBadge";
 import { DataContext } from "../Context";
 
 export function Skills() {
@@ -50,7 +51,7 @@ export function Skills() {
                         )}
                     </div>
                 </div>
-                {/* <div className="rombos-background h-screen w-screen absolute top-0 left-0 z-[-1]"></div> */}
+                <NavButton target="#demo-section" text={lang.demoStuffsTitle} type="navBottom" />
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { SubTitle } from "../components/Fonts/SubTitle";
-import { BgDiamond } from "../components/BgDiamond";
+import { BgDiamond } from "../components/Skills/BgDiamond";
 import { DataContext } from "../Context";
 import styled from 'styled-components'
 
@@ -12,6 +12,7 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { WorkCard } from "../components/WorkCard";
+import { NavButton } from "../components/Menu/NavButton";
 
 export function Laboratory() {
     const {data, lang} = useContext(DataContext);
@@ -52,6 +53,7 @@ export function Laboratory() {
                             )}
                         </Swiper>
                     </div>
+                    <NavButton target="#recent-section" text={lang.recentWorksTitle} type="navBottom" />
                 </div>
                 <BgDiamond color="border-game-blue-300/20" />
             </WithSkulls>

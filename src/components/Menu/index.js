@@ -22,7 +22,7 @@ export function Menu() {
                 alt="Language" />
             </button>
 
-            <nav className="fixed top-1/3 right-3 z-10 flex flex-col">
+            <nav className="fixed top-1/3 right-3 z-30 flex flex-col">
                 <NavButton target="#title-section" text={lang.homeTitle} />
                 <NavButton target="#aboutme-section" text={lang.aboutMeTitle} />
                 <NavButton target="#skills-section" text={lang.skillsTitle} />
