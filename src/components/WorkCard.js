@@ -31,7 +31,7 @@ export function WorkCard({work, i, path, type}) {
             <div className="flex justify-center items-center gap-2 p-3">
 
                 {work.skill.map((skill,i) =>
-                <div className="w-[35px] h-[35px] rounded-full bg-white" key={i}>
+                <div className="w-[35px] h-[35px] rounded-full bg-white z-20" key={i}>
                     <SkillImg shortName={skill} />
                 </div>
                 )}

@@ -149,7 +149,27 @@ export const dataFile = {
             count: '@Alejandro Mejia'
         },
     ],
-    demoStuffs: [{
+    demoStuffs: [
+        {
+            skill: ['react', 'redux'],
+            name: 'Pokedux',
+            shortName: 'pokedux',
+            url: 'https://londrack.github.io/react-pokedux/'
+        },
+        {
+            skill: ['css'],
+            name: 'Rubies catch CSS game',
+            shortName: 'rubies_catch_css',
+            url: 'https://codepen.io/Londrack/full/abJrewx'
+        },
+        {
+            skill: ['vue'],
+            name: 'Alikar MarketList',
+            description: 'App web para ayudarte a llevar tus compras de mercado y controlar tu presupuesto',
+            shortName: 'alikar_marketlist',
+            url: 'https://londrack.github.io/Alikar-market-list/'
+        },
+        {
             skill: ['js'],
             name: 'Calories counter',
             shortName: 'contador_calorias',
@@ -168,13 +188,6 @@ export const dataFile = {
             url: 'https://londrack.github.io/cards_of_rick_and_morty/'
         },
         {
-            skill: ['vue'],
-            name: 'Alikar MarketList',
-            description: 'App web para ayudarte a llevar tus compras de mercado y controlar tu presupuesto',
-            shortName: 'alikar_marketlist',
-            url: 'https://londrack.github.io/Alikar-market-list/'
-        },
-        {
             skill: ['css'],
             name: 'CSS Ilustration',
             shortName: 'ilustracion_css_1',
@@ -185,12 +198,6 @@ export const dataFile = {
             name: 'Checkmate store',
             shortName: 'checkmate',
             url: 'https://checkmate-londrack.netlify.app/home'
-        },
-        {
-            skill: ['css'],
-            name: 'Rubies catch CSS game',
-            shortName: 'rubies_catch_css',
-            url: 'https://codepen.io/Londrack/full/abJrewx'
         },
         {
             skill: ['react'],
