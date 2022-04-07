@@ -8,6 +8,7 @@ import { RecentWorks } from "./pages/RecentWorks";
 import { Laboratory } from "./pages/Laboratory";
 import { Networks } from "./pages/Networks";
 import { SkillsRadar } from "./pages/SkillsRadar";
+import { SkillsCoins } from "./pages/SkillsCoins";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
           <Title />
           <AboutMe />
           {/* <Skills /> */}
-          <SkillsRadar />
+          {/* <SkillsRadar /> */}
+          <SkillsCoins />
           <Laboratory />
           <RecentWorks />
           <Networks />

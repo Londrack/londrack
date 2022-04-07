@@ -44,37 +44,37 @@ export const dataFile = {
         {
             longName: 'Javascript',
             shortName: 'js',
-            lvl: 95,
+            lvl: 88,
             color: 'yellow'
         },
         {
             longName: 'PHP',
             shortName: 'php',
-            lvl: 85,
-            color: 'orange'
+            lvl: 80,
+            color: 'greenDark'
         },
         {
             longName: 'ReactJs',
             shortName: 'react',
-            lvl: 83,
+            lvl: 78,
             color: 'blue'
         },
         {
             longName: 'React Native',
             shortName: 'reactNative',
-            lvl: 80,
+            lvl: 75,
             color: 'silver'
         },
         {
             longName: 'Vue',
             shortName: 'vue',
-            lvl: 70,
+            lvl: 65,
             color: 'green'
         },
         {
             longName: 'Python',
             shortName: 'python',
-            lvl: 45,
+            lvl: 40,
             color: 'gold'
         },
         {
@@ -86,13 +86,13 @@ export const dataFile = {
         {
             longName: 'Angular',
             shortName: 'angular',
-            lvl: 80,
+            lvl: 75,
             color: 'red'
         },
         {
             longName: 'Ionic',
             shortName: 'ionic',
-            lvl: 75,
+            lvl: 70,
             color: 'blueDark'
         },
         {
@@ -110,8 +110,8 @@ export const dataFile = {
         {
             longName: 'Wordpress',
             shortName: 'wordpress',
-            lvl: 85,
-            color: 'greenDark'
+            lvl: 80,
+            color: 'blueDark'
         },
     ],
     recentWorks: [{
@@ -169,12 +169,12 @@ export const dataFile = {
             shortName: 'alikar_marketlist',
             url: 'https://londrack.github.io/Alikar-market-list/'
         },
-        {
-            skill: ['js'],
-            name: 'Calories counter',
-            shortName: 'contador_calorias',
-            url: 'https://codepen.io/Londrack/full/MWOwNRX'
-        },
+        // {
+        //     skill: ['js'],
+        //     name: 'Calories counter',
+        //     shortName: 'contador_calorias',
+        //     url: 'https://codepen.io/Londrack/full/MWOwNRX'
+        // },
         {
             skill: ['angular'],
             name: 'Jaquemate - gameboards store',

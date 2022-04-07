@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.eed2aa24.css",
-    "main.js": "/static/js/main.72d61b68.js",
+    "main.css": "/static/css/main.22a67a11.css",
+    "main.js": "/static/js/main.9a6c130a.js",
     "static/media/night_machine-webfont.woff": "/static/media/night_machine-webfont.d36b3cb23a35434ea841.woff",
     "static/media/night_machine-webfont.woff2": "/static/media/night_machine-webfont.b583fc7507824466e580.woff2",
     "static/media/Vermin-Vibes-1989.woff": "/static/media/Vermin-Vibes-1989.e1988bb812c37ee01ba2.woff",
     "static/media/Vermin-Vibes-1989.woff2": "/static/media/Vermin-Vibes-1989.3c0fb5cd9534ea3b4b82.woff2",
     "index.html": "/index.html",
-    "main.eed2aa24.css.map": "/static/css/main.eed2aa24.css.map",
-    "main.72d61b68.js.map": "/static/js/main.72d61b68.js.map"
+    "main.22a67a11.css.map": "/static/css/main.22a67a11.css.map",
+    "main.9a6c130a.js.map": "/static/js/main.9a6c130a.js.map"
   },
   "entrypoints": [
-    "static/css/main.eed2aa24.css",
-    "static/js/main.72d61b68.js"
+    "static/css/main.22a67a11.css",
+    "static/js/main.9a6c130a.js"
   ]
 }

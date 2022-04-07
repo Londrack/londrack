@@ -11,7 +11,7 @@ export function Menu() {
     }
     return (
         <>
-            <button
+            {/* <button
               className="fixed top-2 right-2 z-50"
               onClick={onSetLang}
               title={lang.selectLanguage}
@@ -20,7 +20,7 @@ export function Menu() {
                 width={30}
                 src={`./imgs/icons/flag_${(language === 'eng') ? 'usa': 'col' }.svg`}
                 alt="Language" />
-            </button>
+            </button> */}
 
             <nav className="fixed top-1/3 right-3 z-30 flex flex-col">
                 <NavButton target="#title-section" text={lang.homeTitle} />
