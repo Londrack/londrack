@@ -48,12 +48,6 @@ export const dataFile = {
             color: 'yellow'
         },
         {
-            longName: 'PHP',
-            shortName: 'php',
-            lvl: 80,
-            color: 'greenDark'
-        },
-        {
             longName: 'ReactJs',
             shortName: 'react',
             lvl: 78,
@@ -66,22 +60,16 @@ export const dataFile = {
             color: 'silver'
         },
         {
+            longName: 'Next Js',
+            shortName: 'next',
+            lvl: 75,
+            color: 'blueDark'
+        },
+        {
             longName: 'Vue',
             shortName: 'vue',
             lvl: 65,
             color: 'green'
-        },
-        {
-            longName: 'Python',
-            shortName: 'python',
-            lvl: 40,
-            color: 'gold'
-        },
-        {
-            longName: 'Redux',
-            shortName: 'redux',
-            lvl: 60,
-            color: 'purple'
         },
         {
             longName: 'Angular',
@@ -90,10 +78,28 @@ export const dataFile = {
             color: 'red'
         },
         {
+            longName: 'Redux',
+            shortName: 'redux',
+            lvl: 60,
+            color: 'purple'
+        },
+        {
             longName: 'Ionic',
             shortName: 'ionic',
             lvl: 70,
             color: 'blueDark'
+        },
+        {
+            longName: 'PHP',
+            shortName: 'php',
+            lvl: 80,
+            color: 'greenDark'
+        },
+        {
+            longName: 'Python',
+            shortName: 'python',
+            lvl: 40,
+            color: 'gold'
         },
         {
             longName: 'Bootstrap',
@@ -154,7 +160,15 @@ export const dataFile = {
             skill: ['react', 'redux'],
             name: 'Pokedux',
             shortName: 'pokedux',
-            url: 'https://londrack.github.io/react-pokedux/'
+            url: 'https://londrack.github.io/react-pokedux/',
+            github: 'https://github.com/Londrack/londrack.github.io',
+        },
+        {
+            skill: ['react', 'next'],
+            name: 'Birth Stars',
+            shortName: 'birthstars',
+            url: 'https://birth-stars.vercel.app/',
+            github: 'https://github.com/Londrack/birth-stars',
         },
         {
             skill: ['css'],
@@ -167,25 +181,22 @@ export const dataFile = {
             name: 'Alikar MarketList',
             description: 'App web para ayudarte a llevar tus compras de mercado y controlar tu presupuesto',
             shortName: 'alikar_marketlist',
-            url: 'https://londrack.github.io/Alikar-market-list/'
+            url: 'https://londrack.github.io/Alikar-market-list/',
+            github: 'https://github.com/Londrack/Alikar-market-list',
         },
-        // {
-        //     skill: ['js'],
-        //     name: 'Calories counter',
-        //     shortName: 'contador_calorias',
-        //     url: 'https://codepen.io/Londrack/full/MWOwNRX'
-        // },
         {
             skill: ['angular'],
             name: 'Jaquemate - gameboards store',
             shortName: 'jaquemate_juegos_de_mesa',
-            url: 'https://angular-store-e4202.web.app'
+            url: 'https://angular-store-e4202.web.app',
+            github: 'https://github.com/Londrack/angular-boardgames-store',
         },
         {
             skill: ['react'],
             name: 'Cards of Rick & Morty',
             shortName: 'rick&morty_cards',
-            url: 'https://londrack.github.io/cards_of_rick_and_morty/'
+            url: 'https://londrack.github.io/cards_of_rick_and_morty/',
+            github: 'https://github.com/Londrack/cards_of_rick_and_morty',
         },
         {
             skill: ['css'],
@@ -197,13 +208,15 @@ export const dataFile = {
             skill: ['angular'],
             name: 'Checkmate store',
             shortName: 'checkmate',
-            url: 'https://checkmate-londrack.netlify.app/home'
+            url: 'https://checkmate-londrack.netlify.app/home',
+            github: 'https://github.com/Londrack/my-store-angular',
         },
         {
             skill: ['react'],
             name: 'Alikar ToDo List',
             shortName: 'alikar_todo_list',
-            url: 'https://londrack.github.io/react-todo-machine/'
+            url: 'https://londrack.github.io/react-todo-machine/',
+            github: 'https://github.com/Londrack/react-todo-machine',
         },
         {
             skill: ['ionic', 'angular'],
@@ -211,5 +224,11 @@ export const dataFile = {
             shortName: 'londrack_music',
             url: 'https://www.mediafire.com/file/ez3dc2tzfb9olav/londrack-music.apk/file'
         },
+        // {
+        //     skill: ['js'],
+        //     name: 'Calories counter',
+        //     shortName: 'contador_calorias',
+        //     url: 'https://codepen.io/Londrack/full/MWOwNRX'
+        // },
     ]
 }

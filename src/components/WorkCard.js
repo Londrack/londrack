@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { SkillImg } from "./Skills/SkillImg";
 
-export function WorkCard({work, i, path, type}) {
+export function WorkCard({work, path, type}) {
     const sizeBox = (type === 'work')
         ? 'w-72 lg:w-[40%] h-80'
         : (type === 'skill')

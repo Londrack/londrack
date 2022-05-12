@@ -18,5 +18,8 @@
         "titleBar.inactiveBackground": "#190e1e99",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#190E1E"
+    "peacock.color": "#190E1E",
+    "cSpell.words": [
+        "Pokedux"
+    ]
 }

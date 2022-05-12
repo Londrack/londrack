@@ -26,6 +26,7 @@ module.exports = {
       indigo: colors.indigo,
       yellow: colors.yellow,
       zinc: colors.zinc,
+      gray: colors.gray,
       neutral: colors.neutral
     },
     fontFamily: {

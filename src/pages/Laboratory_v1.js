@@ -1,72 +1,66 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { SubTitle } from "../components/Fonts/SubTitle";
 import { BgDiamond } from "../components/Skills/BgDiamond";
 import { DataContext } from "../Context";
 import styled from 'styled-components'
 
-import { LabCard } from "../components/LabCard";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { Navigation, Pagination } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { WorkCard } from "../components/WorkCard";
 import { NavButton } from "../components/Menu/NavButton";
 
-
-export function Laboratory() {
-    useEffect(() => {
-        const ele = document.getElementById('labContainer');
-        let pos = { top: 0, left: 0, x: 0, y: 0 };
-
-        const mouseDownHandler = function (e) {
-            console.log('mouseDownHandler');
-            pos = {
-                // The current scroll
-                left: ele.scrollLeft,
-                top: ele.scrollTop,
-                // Get the current mouse position
-                x: e.clientX,
-                y: e.clientY,
-            };
-            document.addEventListener('mousemove', mouseMoveHandler);
-            document.addEventListener('mouseup', mouseUpHandler);
-        };
-
-        const mouseMoveHandler = function (e) {
-            console.log('mouseMoveHandler');
-            // How far the mouse has been moved
-            const dx = e.clientX - pos.x;
-            const dy = e.clientY - pos.y;
-            // Scroll the element
-            ele.scrollTop = pos.top - dy;
-            ele.scrollLeft = pos.left - dx;
-        };
-
-        const mouseUpHandler = function () {
-            console.log('mouseUpHandler');
-            document.removeEventListener('mousemove', mouseMoveHandler);
-            document.removeEventListener('mouseup', mouseUpHandler);
-            ele.style.removeProperty('user-select');
-        };
-
-        ele.addEventListener('mousedown', mouseDownHandler);
-
-    }, []);
-
+export function Laboratory_v1() {
     const {data, lang} = useContext(DataContext);
+    const [widthWindow, setwidthWindow] = useState(window.innerWidth);
 
-    return (
-        <WithSkulls className="bg-gradient-to-b from-game-blue-0 to-game-blue-300
-        overflow-hidden relative sm:px-3" id="demo-section">
-            <div className="container relative z-10">
-                <SubTitle text={lang.demoStuffsTitle} color="text-game-blue-300" />
-                <div id="labContainer" className="mt-5 pb-12 w-auto overflow-x-hidden
-                overflow-y-auto sm:overflow-x-auto
-                sm:overflow-y-hidden sm:whitespace-nowrap" >
-                    { data.demoStuffs.map((demo, i)=>
-                        <LabCard key={`lab${i}`} lab={demo} path='./imgs/laboratory2/'/>
-                    )}
+    useEffect(() => {
+        setwidthWindow(window.innerWidth)
+        const resizeWindow = window.addEventListener('resize', function () {
+            window.location.reload();
+        });
+        return () => { window.removeEventListener("resize", resizeWindow) }
+
+    }, [widthWindow]);
+
+    if (window.innerWidth > 960) {
+        return (
+            <WithSkulls className="bg-gradient-to-b from-game-blue-0 to-game-blue-300 overflow-hidden relative " id="demo-section">
+                <div className="container relative z-10">
+                    <SubTitle text={lang.demoStuffsTitle} color="text-game-blue-300" />
+                    <div className="w-full p-8">
+                        <Swiper
+                            loop={true}
+                            slidesPerView={3}
+                            spaceBetween={20}
+                            slidesPerGroup={3}
+                            loopFillGroupWithBlank={true}
+                            pagination={{
+                            clickable: true,
+                            }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper !pb-12 h-96"
+                        >
+                            { data.demoStuffs.map((demo, i)=>
+                                <SwiperSlide key={`${demo.name + i}`} className="rounded-lg relative overflow-hidden">
+                                    <WorkCard work={demo} path='./imgs/laboratory/' type="skill"/>
+                                </SwiperSlide>
+                            )}
+                        </Swiper>
+                    </div>
+                    <NavButton target="#recent-section" text={lang.recentWorksTitle} type="navBottom" />
                 </div>
-                <NavButton target="#recent-section" text={lang.recentWorksTitle} type="navBottom" />
-            </div>
-            <BgDiamond color="border-game-blue-300/20" />
-        </WithSkulls>
-    )
+                <BgDiamond color="border-game-blue-300/20" />
+            </WithSkulls>
+        )
+    }else{
+        return false;
+    }
 }
 
 const WithSkulls = styled.section`
