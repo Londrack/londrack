@@ -9,44 +9,44 @@ import { NavButton } from "../components/Menu/NavButton";
 
 
 export function Laboratory() {
-    useEffect(() => {
-        const ele = document.getElementById('labContainer');
-        let pos = { top: 0, left: 0, x: 0, y: 0 };
+    // useEffect(() => {
+    //     const ele = document.getElementById('labContainer');
+    //     let pos = { top: 0, left: 0, x: 0, y: 0 };
 
-        const mouseDownHandler = function (e) {
-            console.log('mouseDownHandler');
-            pos = {
-                // The current scroll
-                left: ele.scrollLeft,
-                top: ele.scrollTop,
-                // Get the current mouse position
-                x: e.clientX,
-                y: e.clientY,
-            };
-            document.addEventListener('mousemove', mouseMoveHandler);
-            document.addEventListener('mouseup', mouseUpHandler);
-        };
+    //     const mouseDownHandler = function (e) {
+    //         console.log('mouseDownHandler');
+    //         pos = {
+    //             // The current scroll
+    //             left: ele.scrollLeft,
+    //             top: ele.scrollTop,
+    //             // Get the current mouse position
+    //             x: e.clientX,
+    //             y: e.clientY,
+    //         };
+    //         document.addEventListener('mousemove', mouseMoveHandler);
+    //         document.addEventListener('mouseup', mouseUpHandler);
+    //     };
 
-        const mouseMoveHandler = function (e) {
-            console.log('mouseMoveHandler');
-            // How far the mouse has been moved
-            const dx = e.clientX - pos.x;
-            const dy = e.clientY - pos.y;
-            // Scroll the element
-            ele.scrollTop = pos.top - dy;
-            ele.scrollLeft = pos.left - dx;
-        };
+    //     const mouseMoveHandler = function (e) {
+    //         console.log('mouseMoveHandler');
+    //         // How far the mouse has been moved
+    //         const dx = e.clientX - pos.x;
+    //         const dy = e.clientY - pos.y;
+    //         // Scroll the element
+    //         ele.scrollTop = pos.top - dy;
+    //         ele.scrollLeft = pos.left - dx;
+    //     };
 
-        const mouseUpHandler = function () {
-            console.log('mouseUpHandler');
-            document.removeEventListener('mousemove', mouseMoveHandler);
-            document.removeEventListener('mouseup', mouseUpHandler);
-            ele.style.removeProperty('user-select');
-        };
+    //     const mouseUpHandler = function () {
+    //         console.log('mouseUpHandler');
+    //         document.removeEventListener('mousemove', mouseMoveHandler);
+    //         document.removeEventListener('mouseup', mouseUpHandler);
+    //         ele.style.removeProperty('user-select');
+    //     };
 
-        ele.addEventListener('mousedown', mouseDownHandler);
+    //     ele.addEventListener('mousedown', mouseDownHandler);
 
-    }, []);
+    // }, []);
 
     const {data, lang} = useContext(DataContext);
 
@@ -55,12 +55,15 @@ export function Laboratory() {
         overflow-hidden relative sm:px-3" id="demo-section">
             <div className="container relative z-10">
                 <SubTitle text={lang.demoStuffsTitle} color="text-game-blue-300" />
-                <div id="labContainer" className="mt-5 pb-12 w-auto overflow-x-hidden
+                {/* <div id="labContainer" className="mt-5 pb-12 w-auto overflow-x-hidden
                 overflow-y-auto sm:overflow-x-auto
-                sm:overflow-y-hidden sm:whitespace-nowrap" >
-                    { data.demoStuffs.map((demo, i)=>
-                        <LabCard key={`lab${i}`} lab={demo} path='./imgs/laboratory2/'/>
-                    )}
+                sm:overflow-y-hidden sm:whitespace-nowrap" > */}
+                <div className="flex justify-center items-center">
+                    <div className="mt-5 pb-12 w-auto sm:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4" >
+                        { data.demoStuffs.map((demo, i)=>
+                            <LabCard key={`lab${i}`} lab={demo} path='./imgs/laboratory2/'/>
+                        )}
+                    </div>
                 </div>
                 <NavButton target="#recent-section" text={lang.recentWorksTitle} type="navBottom" />
             </div>

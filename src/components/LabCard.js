@@ -13,8 +13,8 @@ export function LabCard({lab, path}) {
             </a>
 
             {/* Desk */}
-            <Card className="hidden sm:inline-block w-72 h-60
-            rounded-lg mx-2 overflow-hidden relative">
+            <Card className="hidden sm:block w-72 h-60
+            rounded-lg overflow-hidden relative">
                 <div className="bg-black/70 text-white w-full h-0 absolute bottom-[-5px] transition-all
                 flex justify-around items-center">
                     <a href={lab.url} target="_blank" alt={lab.name} rel="noreferrer">URL</a>

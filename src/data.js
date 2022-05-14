@@ -205,13 +205,6 @@ export const dataFile = {
             url: 'https://codepen.io/Londrack/full/wvJgrOK'
         },
         {
-            skill: ['angular'],
-            name: 'Checkmate store',
-            shortName: 'checkmate',
-            url: 'https://checkmate-londrack.netlify.app/home',
-            github: 'https://github.com/Londrack/my-store-angular',
-        },
-        {
             skill: ['react'],
             name: 'Alikar ToDo List',
             shortName: 'alikar_todo_list',
@@ -223,6 +216,13 @@ export const dataFile = {
             name: 'Londrack Music',
             shortName: 'londrack_music',
             url: 'https://www.mediafire.com/file/ez3dc2tzfb9olav/londrack-music.apk/file'
+        },
+        {
+            skill: ['angular'],
+            name: 'Checkmate store',
+            shortName: 'checkmate',
+            url: 'https://checkmate-londrack.netlify.app/home',
+            github: 'https://github.com/Londrack/my-store-angular',
         },
         // {
         //     skill: ['js'],
