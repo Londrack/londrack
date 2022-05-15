@@ -6,49 +6,16 @@ import styled from 'styled-components'
 
 import { LabCard } from "../components/LabCard";
 import { NavButton } from "../components/Menu/NavButton";
+import { useState } from "react/cjs/react.production.min";
 
 
 export function Laboratory() {
-    // useEffect(() => {
-    //     const ele = document.getElementById('labContainer');
-    //     let pos = { top: 0, left: 0, x: 0, y: 0 };
-
-    //     const mouseDownHandler = function (e) {
-    //         console.log('mouseDownHandler');
-    //         pos = {
-    //             // The current scroll
-    //             left: ele.scrollLeft,
-    //             top: ele.scrollTop,
-    //             // Get the current mouse position
-    //             x: e.clientX,
-    //             y: e.clientY,
-    //         };
-    //         document.addEventListener('mousemove', mouseMoveHandler);
-    //         document.addEventListener('mouseup', mouseUpHandler);
-    //     };
-
-    //     const mouseMoveHandler = function (e) {
-    //         console.log('mouseMoveHandler');
-    //         // How far the mouse has been moved
-    //         const dx = e.clientX - pos.x;
-    //         const dy = e.clientY - pos.y;
-    //         // Scroll the element
-    //         ele.scrollTop = pos.top - dy;
-    //         ele.scrollLeft = pos.left - dx;
-    //     };
-
-    //     const mouseUpHandler = function () {
-    //         console.log('mouseUpHandler');
-    //         document.removeEventListener('mousemove', mouseMoveHandler);
-    //         document.removeEventListener('mouseup', mouseUpHandler);
-    //         ele.style.removeProperty('user-select');
-    //     };
-
-    //     ele.addEventListener('mousedown', mouseDownHandler);
-
-    // }, []);
 
     const {data, lang} = useContext(DataContext);
+
+    const tempArray = data.demoStuffs.sort(() => 0.5 - Math.random());
+    const labList = tempArray.slice(0, 10);
+    console.log(labList);
 
     return (
         <WithSkulls className="bg-gradient-to-b from-game-blue-0 to-game-blue-300
@@ -60,8 +27,8 @@ export function Laboratory() {
                 sm:overflow-y-hidden sm:whitespace-nowrap" > */}
                 <div className="flex justify-center items-center">
                     <div className="mt-5 pb-12 w-auto sm:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4" >
-                        { data.demoStuffs.map((demo, i)=>
-                            <LabCard key={`lab${i}`} lab={demo} path='./imgs/laboratory2/'/>
+                        { labList.map((demo, i)=>
+                            <LabCard key={`labCard-${i}`} lab={demo} path='./imgs/laboratory2/'/>
                         )}
                     </div>
                 </div>

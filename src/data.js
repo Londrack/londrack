@@ -224,11 +224,11 @@ export const dataFile = {
             url: 'https://checkmate-londrack.netlify.app/home',
             github: 'https://github.com/Londrack/my-store-angular',
         },
-        // {
-        //     skill: ['js'],
-        //     name: 'Calories counter',
-        //     shortName: 'contador_calorias',
-        //     url: 'https://codepen.io/Londrack/full/MWOwNRX'
-        // },
+        {
+            skill: ['js'],
+            name: 'Calories counter',
+            shortName: 'contador_calorias',
+            url: 'https://codepen.io/Londrack/full/MWOwNRX'
+        },
     ]
 }

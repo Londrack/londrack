@@ -11,7 +11,7 @@ export function SkillsCoins() {
             <div className="container">
                 <SubTitle text={ lang.skillsTitle } color="text-game-blue-300" />
                 <div className="gap-8 w-screen flex flex-wrap p-10 justify-center">
-                    {skills.map((skill, i) => <Coin key={skill.name} skill={skill} delay={i*50 + 'ms'} /> )}
+                    {skills.map((skill, i) => <Coin key={`${skill.name}-${i}`} skill={skill} delay={i*50 + 'ms'} /> )}
                 </div>
             </div>
         </section>

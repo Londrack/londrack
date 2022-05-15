@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { SkillImg } from './Skills/SkillImg';
 
 export function LabCard({lab, path}) {
     return (
@@ -15,8 +16,16 @@ export function LabCard({lab, path}) {
             {/* Desk */}
             <Card className="hidden sm:block w-72 h-60
             rounded-lg overflow-hidden relative">
-                <div className="bg-black/70 text-white w-full h-0 absolute bottom-[-5px] transition-all
-                flex justify-around items-center">
+                <div className='skillsBox bg-black/70 w-full overflow-hidden absolute h-0 transition-all
+                flex justify-center gap-5 items-center'>
+                    {lab.skill.map((skill,i) =>
+                    <div className="w-[35px] h-[35px] rounded-full bg-white z-20" key={`${i}-work`}>
+                        <SkillImg key={`${i}-lab`} shortName={skill} />
+                    </div>
+                    )}
+                </div>
+                <div className="urlBox bg-black/70 text-white w-full h-0 absolute bottom-[-5px]
+                flex justify-around items-center transition-all">
                     <a href={lab.url} target="_blank" alt={lab.name} rel="noreferrer">URL</a>
                     {!!lab.github && <a href={lab.github} target="_blank" alt={lab.name} rel="noreferrer">GIT</a>}
                 </div>
@@ -30,6 +39,7 @@ export function LabCard({lab, path}) {
 
 const Card = styled.a`
     &:hover {
-        > div { height: 30%; bottom:0 }
+        .urlBox { height: 30%; bottom:0 }
+        .skillsBox{ height: 30%; top:0 }
     }
 `
