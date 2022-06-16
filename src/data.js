@@ -158,10 +158,17 @@ export const dataFile = {
     demoStuffs: [
         {
             skill: ['react', 'redux'],
+            name: 'Game Store',
+            shortName: 'react_gamestore',
+            url: 'https://react-gamestore.vercel.app/',
+            github: 'https://github.com/Londrack/react-game-store',
+        },
+        {
+            skill: ['react', 'redux'],
             name: 'Pokedux',
             shortName: 'pokedux',
             url: 'https://londrack.github.io/react-pokedux/',
-            github: 'https://github.com/Londrack/londrack.github.io',
+            github: 'https://github.com/Londrack/react-pokedux',
         },
         {
             skill: ['react', 'next'],
